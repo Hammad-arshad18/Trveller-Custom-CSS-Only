@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+body,html{
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./img/header-bg.png");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.line{
+    width: 160px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+}
+
+.header-content h2{
+    font-size: 5vmin;
+}
+
+
+.header-content h1{
+    font-size: 8vmin;
+    margin: 30px 0 20px 0;
+    text-transform: uppercase;
+}
+
+.learn-more{
+    background-color: #fc036b;
+    padding: 10px 30px;
+    color: whitesmoke;
+    border-radius: 30px;
+    /*border: 1px solid whitesmoke;*/
+    cursor: pointer;
+}
+
+
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.navbar .logo{
+    text-transform: uppercase;
+    font-size: 4vmin;
+}
+
+.navbar .nav-links{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar .nav-links li{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.menu-btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+    /*align-items: center;*/
+}
+
+
+.upcoming-events{
+    width: 90%;
+    margin: 30px auto;
+}
+.upcoming-events .title h1{
+    text-align: center;
+    font-size: 5vmin;
+    text-transform: uppercase;
+    margin: 20px 0 0 0 ;
+}
+.upcoming-events .row{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.upcoming-events .row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.upcoming-events .row .col p{
+    text-align: justify;
+    padding: 0 40px;
+    color: #656565;
+    margin: 20px 0;
+}
+.upcoming-events .row .col img{
+    width: 90%;
+    border-radius: 6px;
+}
+
+.tours{
+    width: 90%;
+    margin: 30px auto;
+}
+
+.tours .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tours .row .col .gallery-images{
+    display: flex;
+    flex-wrap: wrap;
+}
+.tours .row .col{
+    width: 50%;
+}
+
+.tours .row .col .gallery-images img{
+    width: 42%;
+    border-radius: 10px;
+    margin: 10px;
+}
+.tours .row .col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*text-align: center;*/
+}
+.tours .row .col h1{
+    font-size: 7vmin;
+    text-transform: uppercase;
+    margin: 20px 0 0 0 ;
+}
+
+.tours .line{
+    margin-left: -1px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Mobile Responsive*/
+
+@media only screen and (max-width: 850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background: #484872;
+        justify-content: center;
+        margin-top: -900px;
+        transition: 0.5s ease;
+        border-bottom-right-radius: 40%;
+    }
+    .show-nav{
+        margin: 0;
+    }
+    .nav-links li{
+        margin: 30px auto !important;
+    }
+
+
+    /*.upcoming-events .row{*/
+    /*    flex-direction: column;*/
+    /*}*/
+    /*.upcoming-events .row .col p{*/
+    /*    text-align: center;*/
+    /*}*/
+    /*.tours .row{*/
+    /*    flex-direction: column;*/
+    /*}*/
+
+    .row{
+        flex-direction: column;
+    }
+    .row .col img{
+        min-width: 90% !important;
+        /*width: 100%!important;*/
+        /*margin: 10px auto;*/
+        /*object-fit: cover;*/
+    }
+
+    .tours .row .col{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .tours .row .col .gallery-images{
+        display: block;
+    }
+
+    .tours{
+        text-align: center;
+        /*margin: 15px auto;*/
+    }
+    .tours .line{
+        margin: 15px auto;
+    }
+
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar">
+    <h1 class="logo">Adventure</h1>
+    <ul class="nav-links">
+        <li>Home</li>
+        <li>Tours</li>
+        <li>Explore</li>
+        <li>About</li>
+    </ul>
+    <img src="img/menu-btn.png" alt="Menu Button" class="menu-btn">
+</nav>
+
+<!--Header-->
+<header>
+    <div class="header-content">
+        <h2>Explore The Wonderful World</h2>
+        <div class="line"></div>
+        <h1>A Wonderful Gift</h1>
+        <a href="#" class="learn-more">Learn More</a>
+    </div>
+</header>
+
+<section class="upcoming-events">
+    <div class="title">
+        <h1>Upcoming Events</h1>
+        <div class="line"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="img/img1.png" alt="Image 1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet animi corporis eaque earum error,
+                id illum ipsam iusto, labore libero molestias necessitatibus placeat quisquam temporibus totam voluptatem voluptatum!</p>
+            <a href="#" class="learn-more">Learn More</a>
+        </div>
+        <div class="col">
+            <img src="img/img2.png" alt="Image 2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid amet animi corporis eaque earum error,
+                id illum ipsam iusto, labore libero molestias necessitatibus placeat quisquam temporibus totam voluptatem voluptatum!</p>
+            <a href="#" class="learn-more">Learn More</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="tours">
+    <div class="row">
+        <div class="col">
+            <div class="description">
+                <h1>upcoming tours & destination</h1>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolore dolorum eveniet incidunt obcaecati reiciendis
+                    repellat velit? Dolorem eligendi est expedita iure nemo pariatur quo quod rerum similique tenetur. Repellendus!</p>
+<!--                <a href="#" class="learn-more">Learn More</a>-->
+            </div>
+        </div>
+        <div class="col">
+            <div class="gallery-images">
+                <img src="img/img3.png" alt="Image 3">
+                <img src="img/img4.png" alt="Image 4">
+                <img src="img/img5.png" alt="Image 5">
+                <img src="img/img6.png" alt="Image 6">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script>
+    const menuBtn = document.querySelector('.menu-btn')
+    const navLinks = document.querySelector('.nav-links')
+    menuBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('show-nav')
+    })
+</script>
+</body>
+</html>
